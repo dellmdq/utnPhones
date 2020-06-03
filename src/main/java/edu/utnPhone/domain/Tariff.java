@@ -1,12 +1,15 @@
-package edu.utnPhone.domain;
+/*package edu.utnPhone.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import javax.persistence.Table;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@EqualsAndHashCode
+@ToString
+@Table (name = "tariffs")
 public class Tariff {
     private Integer id;
     private City CityFrom;
@@ -14,3 +17,4 @@ public class Tariff {
     private double priceXminute;
     private double costPriceXminute;
 }
+*/

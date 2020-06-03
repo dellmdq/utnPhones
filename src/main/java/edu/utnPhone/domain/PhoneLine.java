@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+/*@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class PhoneLine {
@@ -13,4 +13,4 @@ public class PhoneLine {
     private LineType lineType;
     private City city;
     private User user;
-}
+}*/

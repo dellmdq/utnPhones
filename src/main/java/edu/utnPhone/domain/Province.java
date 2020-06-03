@@ -1,13 +1,24 @@
 package edu.utnPhone.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@ToString
+@EqualsAndHashCode
+@Table (name = "provinces")
+
 public class Province {
-    private Integer province;
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    private Long province;
+
+    @Column (name = "province_name")
+    @NotNull
     private String name;
 }

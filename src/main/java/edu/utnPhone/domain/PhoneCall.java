@@ -1,14 +1,22 @@
-package edu.utnPhone.domain;
+/*package edu.utnPhone.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import javax.persistence.*;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+@Entity
+@Table (name = "phoneCalls")
 public class PhoneCall {
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    //consultar que annotation debo poner en este caso
     private PhoneLine phoneLineFrom;
     private PhoneLine phoneLineTo;
     private City CityFrom;
@@ -19,4 +27,4 @@ public class PhoneCall {
     private double totalPrice;
 
 
-}
+}*/
